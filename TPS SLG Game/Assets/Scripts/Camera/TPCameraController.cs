@@ -70,6 +70,7 @@ public class TPCameraController : MonoBehaviour
         if (this.target != null)
         {
             // Y Rotation (Look Rotation)
+            //为什么一定要用欧拉角
             this.rigTargetLocalRotation = Quaternion.Euler(0f, controlRotation.eulerAngles.y, 0f);
 
             // X Rotation (Tilt Rotation)
